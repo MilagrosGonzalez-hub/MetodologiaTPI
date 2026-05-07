@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { LoginForm } from './LoginForm'
 import { GraduationCap } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
@@ -75,7 +76,9 @@ export default function LoginPage() {
             Ingresá tus credenciales para acceder al sistema
           </p>
 
-          <LoginForm />
+          <Suspense fallback={<div className="h-40 flex items-center justify-center text-neutral-400 text-sm">Cargando...</div>}>
+            <LoginForm />
+          </Suspense>
 
           <p className="text-center text-xs text-neutral-400 mt-6">
             ¿Problemas para ingresar?{' '}
