@@ -71,6 +71,7 @@ export default async function HomePage() {
           className="absolute right-0 top-0 bottom-0 w-full lg:w-1/2 opacity-20 lg:opacity-40"
           style={{
             backgroundImage: 'url(https://picsum.photos/seed/school-edu-2027/900/700)',
+            backgroundImage:"url('/educacion.jpeg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -228,9 +229,9 @@ export default async function HomePage() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { nivel: 'Inicial', age: '3 a 5 años', desc: 'Primera infancia con metodología lúdica y estimulación temprana integral.', color: 'from-green-400 to-teal-500', img: 'school-inicial' },
-              { nivel: 'Primario', age: '6 a 12 años', desc: 'Formación sólida en competencias básicas con proyecto interdisciplinario.', color: 'from-brand-400 to-brand-600', img: 'school-primary' },
-              { nivel: 'Secundario', age: '13 a 17 años', desc: 'Jornada extendida con orientación académica, deportiva y artística.', color: 'from-indigo-500 to-purple-600', img: 'school-secondary' },
+              { nivel: 'Inicial', age: '3 a 5 años', desc: 'Primera infancia con metodología lúdica y estimulación temprana integral.', color: 'from-green-400 to-teal-500', img: 'nivel.inicial' },
+              { nivel: 'Primario', age: '6 a 12 años', desc: 'Formación sólida en competencias básicas con proyecto interdisciplinario.', color: 'from-brand-400 to-brand-600', img: 'primario' },
+              { nivel: 'Secundario', age: '13 a 17 años', desc: 'Jornada extendida con orientación académica, deportiva y artística.', color: 'from-indigo-500 to-purple-600', img: 'secundaria' },
             ].map((item) => (
               <Link
                 key={item.nivel}
@@ -239,7 +240,9 @@ export default async function HomePage() {
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                  style={{ backgroundImage: `url(https://picsum.photos/seed/${item.img}/600/800)` }}
+                  style={{ backgroundImage: `url(https://picsum.photos/seed/${item.img}/600/800)`,
+                 backgroundImage: `url('/${item.img}.jpeg')` }}
+
                   aria-hidden="true"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-b ${item.color} opacity-60`} aria-hidden="true" />
