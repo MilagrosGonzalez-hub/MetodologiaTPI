@@ -238,11 +238,9 @@ export default async function HomePage() {
                 className="group relative overflow-hidden rounded-3xl aspect-[3/4] block"
               >
                 <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                  style={{ backgroundImage: `url(https://picsum.photos/seed/${item.img}/600/800)`,
-                 backgroundImage: `url('/${item.img}.jpeg')` }}
-
-                  aria-hidden="true"
+  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+  style={{ backgroundImage: `url('/${item.img}.jpeg')` }}
+  aria-hidden="true"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-b ${item.color} opacity-60`} aria-hidden="true" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" aria-hidden="true" />
