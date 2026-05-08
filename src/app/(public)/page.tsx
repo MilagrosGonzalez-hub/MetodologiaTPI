@@ -70,11 +70,10 @@ export default async function HomePage() {
         <div
           className="absolute right-0 top-0 bottom-0 w-full lg:w-1/2 opacity-20 lg:opacity-40"
           style={{
-            backgroundImage: 'url(https://picsum.photos/seed/school-edu-2027/900/700)',
-            backgroundImage:"url('/educacion.jpeg')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
+    backgroundImage: "url('/educacion.jpeg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+}}
           aria-hidden="true"
         />
         <div
